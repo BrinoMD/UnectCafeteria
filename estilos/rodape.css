@@ -1,0 +1,33 @@
+#rodape{
+    background-color: #57290B;
+    height: 100px;
+    color: #FFDAB8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#textoBorda{
+    margin-left: 150px;
+}
+#textoBorda2{
+    margin-right: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    #rodape{
+        background-color: #57290B;
+        height: 100px;
+        color: #FFDAB8;
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #rodape span{
+        margin: 0px;
+        padding-left: 30px;
+    }
+
+}

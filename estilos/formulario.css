@@ -1,0 +1,214 @@
+#formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1050px;
+}
+
+#Caixa{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    width: 1100px;
+}
+
+#Caixa img{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#inputCaixa{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+#CaixaNome{
+    height: 70px;
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+#CaixaEmail{
+    height: 70px;
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+#CaixaMensagem{
+    height: 140px;
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+#Enviar{
+    font-family: "Arial";
+    color: white;
+    background-color: #8F542E;
+    font-weight: 800;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 228px;
+}
+
+#Enviar:hover {
+    transition: 1s;
+    font-family: "Arial";
+    color: white;
+    background-color: #9c826e;
+    font-weight: 800;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 228px;
+}
+
+#botaoC{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 800;
+}
+
+#tituloFormulario{
+    font-family: "Cormorant Garamond";
+    font-size: 45px;
+    margin-right: 650px;
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+
+#blocoLaranja2 {
+    position: absolute;
+    width: 475px;
+    height: 30px;
+    left: 370px;
+    top: 2708px;
+    background: #FBC9A8;
+    z-index: -1;
+}
+
+#mobile-redes{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #formulario{
+        height: 770px;
+        background-color: white;
+    }
+
+    #Caixa img{
+        display: none;
+    }
+
+    #tituloFormulario{
+        margin-top: 80px;
+        font-size: 30px;
+        margin-right: 0px;
+        position: relative;
+        display: inline-block;
+        z-index: 3;
+        margin-right: 70px;
+        margin-bottom: 40px;
+    }
+
+    #tituloFormulario::after {
+        background-color: #FBC9A8;
+        height: 20px;
+        content: '';
+        left: -15px;
+        right: -15px;
+        bottom: -2px;
+        position: absolute;
+        z-index: -1;
+}
+
+    #Caixa{
+        height: 480px;
+        width: 400px;
+        background-color: #F5F3ED;
+    }
+
+    #inputCaixa{
+       padding-top: 15px;
+    }
+
+    #CaixaNome{
+        height: 45px;
+        width: 320px;
+        border: 1.5px;
+        border-radius: 5px;
+        border-color: #8F542E;
+        border-style: solid;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    #CaixaEmail{
+        height: 45px;
+        width: 320px;
+        border: 1.5px;
+        border-radius: 5px;
+        border-color: #8F542E;
+        border-style: solid;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    #CaixaMensagem{
+        height: 100px;
+        width: 320px;
+        border: 1.5px;
+        border-radius: 5px;
+        border-color: #8F542E;
+        border-style: solid;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    #Enviar{
+        margin-top: 5px;
+        padding: 12px;
+    }
+    #Enviar:hover{
+        transition: 0s;
+        margin-top: 5px;
+        padding: 12px;
+    }
+
+    #blocoLaranja2{
+        display: none;
+    }
+
+    #mobile-redes{
+        font-family: "Arial";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-tituloFinal{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    #mobile-imgs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 25px;
+    }
+
+}

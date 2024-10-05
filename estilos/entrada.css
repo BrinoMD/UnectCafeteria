@@ -1,0 +1,80 @@
+#entrada{
+    background-image: url("../imagens/BackGroundHeader.png");
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    color: white;
+    font-family: "Arial";
+    align-content: center;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+#tituloA{
+    font-size: 70px;
+}
+
+#subTituloA{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#entradaText{
+    margin-left: 100px;
+    max-width: 39%;
+}
+
+#botaoEntrada{
+    font-family: "Arial";
+    margin-left: 100px;
+    color: white;
+    background-color: #8F542E;
+    font-weight: 800;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#botaoA{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 800;
+}
+
+#entrada a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px){
+
+    #subTituloA{
+        display: none;
+    }
+
+    #entrada{
+        height: 250px;
+        background-position: 95%;
+        width: 100%;
+    }
+
+    #entradaText{
+        background-size: cover;
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+    #tituloA{
+        font-size: 30px;
+        max-width: 85%;
+    }
+
+    #botaoEntrada{
+        margin-left: 20px;
+        padding: 12px;
+    }
+
+}

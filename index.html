@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/navegacao.css">
+    <link rel="stylesheet" href="estilos/entrada.css">
+    <link rel="stylesheet" href="estilos/contato.css">
+    <link rel="stylesheet" href="estilos/cardapio.css">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/rodape.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Palavras Cafeinadas</title>
+</head>
+<body>  
+
+    <nav id="navegacao">
+        <ul id="listaNavegacao">
+            <li class="itemNavegacao">
+                <a href="#contato">Sobre Nós</a>
+            </li>
+            <li class="itemNavegacao">
+                <a href="#cafeteria">Cafeteria</a>
+            </li>
+            <li>
+                <img src="imagens/Logo.png" alt="">
+            </li>
+            <li class="itemNavegacao">
+                <a href="#formulario">Contato</a>
+            </li>
+            <li id="numNavegacao">
+                <img src="imagens/Telefone.png" alt="">
+                <span>
+                    19-991256972
+                </span>
+            </li> 
+        </ul>
+        <ul id="mobile-listaNavegacao">
+            <li id="mobile-logo">
+                <img src="imagens/logo_mobile.svg" alt="">
+            </li>
+            <li id="mobile-titulo">
+                <h1>Palavras Cafeinadas</h1>
+            </li> 
+            <li id="mobile-menu">
+                <img onclick="exibeMenuMobile( )" id="Abrir" src="imagens/Menu-mob.png" alt="">
+                <img onclick="fechaMenuMobile()" id="Fechar" src="imagens/Sair.svg" alt="">
+            </li>     
+        </ul>
+        
+    </nav>
+
+    <div id="mobile-opcoes">
+        <ul onclick="fechaMenuMobile()">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#contato">Sobre Nós</a>
+            </li>
+            <li>
+                <a href="#cafeteria">Cafeteria</a>
+            </li>
+            <li>
+                <a href="#formulario">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <main id="entrada">
+        <div id="entradaText">
+        <h1 id="tituloA">
+        Leia acompanhado de uma culinária de qualidade
+        </h1>
+        <p id="subTituloA">
+        Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.
+        </p>          
+        </div>
+        <a href="#cafeteria">
+            <button id="botaoEntrada">
+                <span>
+                    VENHA CONHECER
+                </span>
+                <span class="material-symbols-outlined" id="botaoA">
+                    arrow_right_alt
+                </span>
+            </button>  
+        </a>
+    </main>
+
+    <section id="contato">
+    <div id="contatoText">
+    <div id="blocoLaranja"></div>   
+    <h1 id="tituloB">
+        SOBRE NÓS
+    </h1>
+    <p id="primeiroP">
+        A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.
+    </p>
+    <br>
+    <p id="segundoP">
+        O sonho de Carolina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:
+    </p>
+    <a href="#formulario">
+        <button id="botaoContato">
+            <span>
+                FALE CONOSCO
+            </span>
+            <span class="material-symbols-outlined" id="botaoB">
+                arrow_right_alt
+            </span>
+        </button>
+    </a>
+    </div>
+    <img id="muitosCafes" src="imagens/muitosCafes.png" alt="">
+    </section>
+
+    <img id="ondas" src="imagens/ondasDeCafe.png" alt="">
+    <img id="onda-mobile" src="imagens/Cafe onda mobile.png" alt="">
+
+    <section id="cafeteria">
+        <h1 id="cafe">
+            <span>
+                CAFETERIA
+            </span>
+        </h1>
+        <div id="cardapio">
+            <div id="slidesCardapios">
+                <button id="volta" onclick="voltaAnterior()">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                        </span>
+                </button>
+                <div id="slide1" class="item-slider">
+                    <img id="item1" src="imagens/carrossel1.png" alt="Imagem do Cardápio">
+                    <p> <strong id="title1">Brigadeiro de capuccino</strong> <br> <span id="leg1">O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</span></p>
+                </div>
+                <div id="slide2" class="item-slider">
+                    <img id="item2" src="imagens/carrossel2.png" alt="Imagem do Cardápio">
+                    <p> <strong id="title2">Pão de Mel</strong> <br> <span id="leg2">O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</span></p>
+                </div>
+                <div id="slide3" class="item-slider">
+                    <img id="item3" src="imagens/carrossel3.png" alt="Imagem do Cardápio">
+                    <p> <strong id="title3">Bolo de chocolate</strong> <br> <span id="leg3">O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...</span></p>
+                </div>
+                <button id="avanca" onclick="avancaProximo()">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario">
+        <div id="blocoLaranja2"></div>  
+        <h1 id="tituloFormulario">ENTRE EM CONTATO</h1>
+        <div id="Caixa">
+            <img src="imagens/contatosFormulario.png" alt="">
+            <div id="inputCaixa">
+                
+                    <label for="CaixaNome"><strong>Nome</strong></label>
+                    <input id="CaixaNome" type="text">
+                
+                    <label for="CaixaEmail"><strong>E-mail</strong></label>
+                    <input id="CaixaEmail" type="text">
+                
+                    <label for="CaixaMensagem"><strong>Mensagem</strong></label>
+                    <input id="CaixaMensagem" type="text">
+
+                    <button id="Enviar">
+                        <span>
+                            ENVIAR MENSAGEM
+                        </span>
+                        <span class="material-symbols-outlined" id="botaoC">
+                            arrow_right_alt
+                        </span>
+                    </button>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="mobile-redes">
+        <h1 id="mobile-tituloFinal">NOS ENCONTRE AQUI:</h1>
+        <div id="mobile-imgs">
+            <img src="imagens/Facebook.png" alt="">
+            <img src="imagens/Instagram.png" alt="">
+            <img src="imagens/TelefoneMobile.png" alt="">
+        </div>
+    </div>
+
+    <section id="rodape">
+        <span id="textoBorda">
+            Desenvolvido por Unect Jr
+        </span>
+        <span id="textoBorda2">
+            Todos os direitos reservados ©
+        </span>
+    </section>
+
+<script src="cafeteria.js"></script>    
+<script src="mobile-cafeteria.js"></script>    
+</body>
+</html>

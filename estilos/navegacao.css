@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body {
+    background-color:#F5F3ED;
+    display: flex;
+    flex-direction: column;
+}
+
+#navegacao{
+    background-color: #57290B;
+    height: 100px;
+    font-family: "Cormorant Garamond";
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+#listaNavegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.itemNavegacao{
+    border-bottom: 2px solid #b2784a;
+}
+
+#numNavegacao{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemNavegacao a{
+    color: white;
+    text-decoration: none;
+}
+
+#mobile-listaNavegacao{
+    display: none;
+}
+
+#mobile-opcoes{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-color: white;
+    }
+    
+    #navegacao{
+        position: absolute;
+        z-index: 4;
+    }
+
+    #listaNavegacao{
+        display: none;
+    }
+
+    #mobile-listaNavegacao{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        color: white;
+    }
+
+    #mobile-logo img{
+        height: 60px;
+        width: 50px;
+    }
+
+    #Abrir{
+        height: 22px;
+        width: 52px;
+    }
+
+    #mobile-titulo h1{
+        font-family: "Cormorant Garamond";
+        font-size: 35px;
+    }
+
+    #mobile-opcoes{
+        display: none;
+        margin-top: 100px;
+        height: 370px;
+        background-color: #F5F3ED;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+    }
+
+    #Fechar{
+        display: none;
+        height: 32px;
+        width: 52px;
+    }
+
+    #mobile-opcoes ul{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #mobile-opcoes ul li{
+        margin-left: 55px;
+        background-color: white;
+        font-weight: 800;
+        padding: 16px;
+        border-radius: 10px;
+        margin-top: 30px;
+        display: block;
+        align-items: center;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #mobile-opcoes ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+

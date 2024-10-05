@@ -1,0 +1,95 @@
+#cafeteria {
+    background-color: #80451F;
+    height: 800px;
+    justify-content: center; 
+}
+
+#cafe {
+    color: white;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+#cafe span {
+    border-bottom: 3px solid #b2784a;
+    font-family: "Cormorant Garamond";
+    font-size: 40px;
+}
+
+#slidesCardapios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.item-slider{
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+}
+
+.item-slider img{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+#avanca{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#volta{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#avanca span{
+    color: white;
+}
+
+#volta span{
+    color: white;
+}
+
+.item-slider p{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 320px;
+}
+
+.item-slider p span{
+    font-size: 18px;
+}
+
+#ondas{
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #cafeteria{
+        height: 850px;
+    }
+
+    #cafe{
+        padding-top: 150px;
+    }
+
+    #slide2{
+        display: none;
+    }
+
+    #slide3{
+        display: none;
+    }
+
+    #slidesCardapios{
+        gap: 10px;
+    }
+
+}
